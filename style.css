@@ -1,0 +1,418 @@
+header {
+    background-image:url("./pexels-gui-basto-517975-1249586.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Imagen no repita */
+    height:60vh; 
+   
+    
+    }
+    
+    /* Texto index */
+
+.primer-h1 {
+    font-family: "Monoscape";
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;   
+    height: 190px;
+    font-weight: 300; /* Grosor */
+    
+    
+    }
+    
+  .segundo-h1 {
+    font-family: monospace;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;   
+    height: 35px;
+    font-weight: 300; 
+   
+
+    
+    }
+
+  .tercer-h1 {
+      font-family: "Segoe IU", sans-serif;
+      color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: center; 
+      align-items: flex-end;   
+      height: 30px;
+      font-weight: 300; 
+       
+    }
+
+    /* Menú navegación*/
+
+    .navegation{
+   
+       
+            position: fixed;
+            top: 0;               /* Fija el menú  parte superior */
+            left: 0;             /* Alinea el menú a la izquierda */
+            width: 100%;          
+            background-color: beige; 
+            padding: 10px 0;      
+            z-index: 1000;       /*  Menú sobre otros elementos */
+            
+        }
+        
+   
+    .menu {
+        
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            
+    }
+   
+    .menu li {
+        margin: 0 15px;
+    }
+    
+    .menu li a {
+        color: black;
+        text-decoration: none;
+        padding: 7px 20px;
+        display: block;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+   
+    .menu li a:hover {
+        background-color: white;
+
+    }
+
+    header, #Biografía {
+        margin: 0;
+        padding: 0;
+      }
+      
+
+
+      /* Estilo sección Biografía */
+
+
+
+    #Biografía  {
+   
+    background-color: rgb(254, 245, 231) ;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    
+   
+    }
+
+    #Biografía h2 {
+
+        font-family: "monospace";
+        color: gray;
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-color: gray; /* Cambia el color del subrayado */
+        text-decoration-style: solid;
+        margin-top: 0px;
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        font-weight: 300;
+    }
+
+   .contenido{
+    display: flex;
+    align-items: center;
+    
+   }
+    .mi-foto {
+        width: 132px;
+        height: 170px;
+        margin-left: 120px;
+        margin-right: 20px;
+      
+    }
+
+   .parrafo{
+
+    font-family: "Segoe IU", sans-serif;
+    color: grey;
+    font-size: 17px;
+    display: flex;
+    text-align: justify; 
+    padding-right: 50px;
+    padding-left: 50px;
+   }
+
+
+   @media (max-width: 768px) {
+  
+    .contenido  {
+ flex-direction: column; 
+ align-items: center; 
+ 
+ }
+       
+ .mi-foto {
+ margin-bottom: 20px; /* Margen inferior espacio entre la imagen y el texto */
+ width: 100px; /* Ajusta tamaño imagen para móviles */
+ height: 130px; /* Mantén la proporción de la imagen */
+ margin: 0;
+ 
+ }
+ 
+ .parrafo {
+ font-size: 15px; /* Reduce el tamaño del texto para pantallas móviles */
+ padding: 0px 20px; /* Ajusta el padding en móviles */
+ text-align: justify;
+ 
+  }
+
+}
+  
+  /* Estilo sección Portfolio*/
+
+   #Portfolio {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;  
+    background-color: white;
+    height: 500px;
+    
+  }
+
+  .title-portfolio {
+
+    font-family: "Segoe IU", sans-serif;
+    color: gray;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: gray; /* Cambia el color del subrayado */
+    text-decoration-style: solid;
+    margin-top: 0px;
+    padding-top: 40px;
+    display: flex;
+    
+    justify-content: center;
+    height: 50px;
+    font-weight: 300;
+
+  }
+  
+  .cajas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas se ajusten en múltiples filas si es necesario */
+    gap: 20px; /* Espacio entre las cajas */
+    padding: 20px;
+    justify-content: center;
+    color: grey;
+    
+   
+  }
+
+  
+  .caja {
+    background-color:rgb(233, 247, 239);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; 
+    text-align: center;
+  }
+  
+  .caja img {
+    max-width: 100%; /* Imagen no salga de la caja */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .caja h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+ 
+  }
+  
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: grey;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: rgba(128, 128, 128, 0.581);
+
+  }
+  
+  @media (max-width: 768px) {
+  .cajas {
+    flex-direction: column; /* Cajas verticalmente en pantallas pequeñas */
+    align-items: center; /* Centra las cajas horizontalmente en pantallas pequeñas */
+    }
+
+  }
+
+
+
+  /* Estilo sección Contacto */
+
+
+
+  footer{
+    background-color: rgb(254, 245, 231); /* Fondo oscuro */
+    width:100%;
+    padding: 20px; /* Espacio interior */
+    margin: 0;
+    text-align: center; /* Centrar el texto */
+    height: auto;
+    
+  }
+
+
+
+ .title-contacto{
+    font-family: "Segoe IU", sans-serif;
+    color: gray;
+    font-size: 25px;
+ }
+
+
+  footer .title-contacto {
+    margin-bottom: 20px; 
+  }
+  
+  .formulario {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la línea siguiente si el espacio es insuficiente */
+    padding: 10px; /* Espacio interior del contenedor */
+    max-width: 600px; /* Limitar el ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  
+  }
+
+
+  .formulario label {
+    margin-right: 10px; 
+    font-family: "monospace";
+    color: rgb(198, 184, 184);
+    font-size: 20px;
+
+  }
+
+  
+  
+  /* Estilo para los inputs */
+
+
+  .formulario input[type="email"],
+  .formulario input[type="submit"] {
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    font-size: 10px; 
+  }
+  
+  .formulario input[type="submit"] {
+    background-color: #28b5babe; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color: #065355; 
+  }
+
+
+
+/*Estilo redes enlaces*/
+
+  footer .Redes {
+    margin-top: 20px; 
+  }
+  
+  footer .Redes ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  footer .Redes li {
+    display: inline-block; 
+    margin: 0 30px;
+  }
+  
+  footer .Redes img {
+    width: 60px; 
+    height: 60px; 
+  }
+  
+  footer .footer-bottom {
+    margin-top: 20px; 
+  }
+  
+  footer .footer-bottom p {
+    margin: 0; 
+  }
+
+  
+  hr {
+    border: 0;
+    border-top: 1px solid gray;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+
+  .formulario input[type="email"] {
+      max-width: 100%; 
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .formulario input[type="submit"] {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+
+  /* Iconos de redes sociales más pequeños en móviles */
+  .Redes li a img {
+      width: 30px;
+      height: 30px;
+  }
+
+  /* Ajustar el texto del pie de página */
+
+  .footer-bottom p {
+      font-size: 12px;
+  }
+}
+
+
+
+
+  
+
+
+
+
