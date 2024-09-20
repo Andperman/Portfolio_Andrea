@@ -2,10 +2,11 @@ header {
     background-image:url("./pexels-gui-basto-517975-1249586.jpg");
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; /* Imagen no repita */
+    background-repeat: no-repeat; 
     height: 700px;; 
    
     }
+
     
     /* Texto index */
 
@@ -99,6 +100,31 @@ header {
       
 
 
+      @media (max-width: 768px) {
+        header {
+            height: 800px; 
+        }
+    
+        .primer-h1 {
+            font-size: 18px; 
+        }
+    
+        .segundo-h1 {
+            font-size: 22px; 
+    
+        .tercer-h1 {
+            font-size: 12px; 
+        }
+    
+        .menu li {
+            margin: 0 5px; 
+        }
+    
+        .menu li a {
+            padding: 5px 10px; 
+        }
+    }
+  }
       /* Estilo sección Biografía */
 
 
@@ -110,6 +136,7 @@ header {
     overflow: hidden;
     position: relative;
     text-align: center;
+    padding-bottom:250px;
     
    
     }
@@ -179,15 +206,18 @@ header {
   }
 
 }
+
+
   
   /* Estilo sección Portfolio*/
 
   #Portfolio {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;  
+    padding-bottom:300px;  
     background-color: white;
-    height: 500px;
+    height: auto;
+   
     
   }
 
@@ -265,13 +295,38 @@ header {
 
   }
   
-  @media (max-width: 768px) {
-  .cajas {
-    flex-direction: column; /* Cajas verticalmente en pantallas pequeñas */
-    align-items: center; /* Centra las cajas horizontalmente en pantallas pequeñas */
-    }
 
+ 
+
+
+
+@media (max-width: 1024px) {
+  .caja {
+      width: 45%; /* Dos cajas por fila en pantallas más pequeñas */
   }
+
+  .title-portfolio {
+      font-size: 40px; /* Reducir el tamaño del título */
+  }
+}
+
+@media (max-width: 768px) {
+  .caja {
+      width: 90%; /* Una caja por fila en tablets y móviles */
+  }
+
+  .title-portfolio {
+      font-size: 30px; /* Ajustar tamaño del título para móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .cajas {
+      gap: 30px; /* Menos espacio entre cajas en móviles */
+  }
+
+}
+  
 
 
 
@@ -283,6 +338,7 @@ header {
     display: flex;
     justify-content: center;
     height: 700px;
+    padding-bottom:250px;
   }
   
   .form-contacto {
@@ -403,7 +459,23 @@ header {
   }
   
 
+  @media (max-width: 768px) {
+    .title-contacto {
+        font-size: 24px; 
+    }
+  
+    .subtitle {
+        font-size: 12px; 
+    }
+    .input {
+        font-size: 16px; 
+    }
+  
+    .submit {
+        font-size: 16px; 
+  }
 
+  }
 
 
 
@@ -419,6 +491,7 @@ header {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 1000;
   }
 
 
@@ -505,8 +578,7 @@ header {
  
  
 
-@media (max-width: 768px) {
-
+  @media (max-width: 768px) {
   .formulario input[type="email"] {
       max-width: 100%; 
       padding: 8px;
@@ -530,12 +602,4 @@ header {
       font-size: 12px;
   }
 }
-
-
-
-
-  
-
-
-/* /////////////////////Formulario//////////////////// */
 
