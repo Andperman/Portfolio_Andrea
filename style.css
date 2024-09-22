@@ -125,9 +125,8 @@ header {
         }
     }
   }
+
       /* Estilo sección Biografía */
-
-
 
     #Biografía  {
    
@@ -185,23 +184,23 @@ header {
    @media (max-width: 768px) {
   
     .contenido  {
- flex-direction: column; 
- align-items: center; 
+      flex-direction: column; 
+      align-items: center; 
  
  }
        
- .mi-foto {
- margin-bottom: 20px; /* Margen inferior espacio entre la imagen y el texto */
- width: 100px; /* Ajusta tamaño imagen para móviles */
- height: 130px; /* Mantén la proporción de la imagen */
- margin: 0;
+    .mi-foto {
+      margin-bottom: 20px; /* Margen inferior espacio entre la imagen y el texto */
+      width: 100px; /* Ajusta tamaño imagen para móviles */
+      height: 130px; /* Mantén la proporción de la imagen */
+      margin: 0;
  
  }
  
- .parrafo {
- font-size: 15px; /* Reduce el tamaño del texto para pantallas móviles */
- padding: 0px 20px; /* Ajusta el padding en móviles */
- text-align: justify;
+    .parrafo {
+      font-size: 15px; /* Reduce el tamaño del texto para pantallas móviles */
+      padding: 0px 20px; /* Ajusta el padding en móviles */
+      text-align: justify;
  
   }
 
@@ -271,7 +270,6 @@ header {
     
   }
  
-
  
   .caja h2 {
     font-size: 1.5em;
@@ -295,8 +293,6 @@ header {
 
   }
   
-
- 
 
 
 
@@ -327,7 +323,6 @@ header {
 
 }
   
-
 
 
   /* Estilo sección Contacto */
